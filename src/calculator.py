@@ -17,6 +17,8 @@ def multiply(a, b):
 
 def divide(a, b):
     """Divide a by b"""
+    if b == 0:
+        raise ZeroDivisionError("Cannot divide by zero.")
     return a/b
 
 # TODO: Students will add multiply, divide, power, sqrt functions
